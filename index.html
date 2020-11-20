@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Diana Eddie - Web Developer</title>
+        <meta name="description" content="This is my portfolio - Check it out">
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <section class="hero-unit dark-content d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-md-6">
+                        <h1 class="hero-unit-heading">Diana Eddie <br> 다이아나 에디</h1>
+                        <h2 class="hero-unit-subheading">UI/UX Designer &amp; Web Developer</h2>
+                        <p>I enjoy building pretty things just like everyone else - but Human-centered and with the use of Design Thinking principles. 
+                        </p>
+
+                        <p>저는 다른 사람들처럼 예쁜 것들을 만드는 것을 즐깁니다 - 하지만 인간 중심적이고 디자인적 사고 원리를 사용합니다.</p>
+
+                        <button id="portfolio-button" class="mt-5 btn btn-primary">Go to Portfolio</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section content-section-centered">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Portfolio</h2>
+                        <p>Here's a selection of my favourite and most recent pieces of work.</p>
+                    </div>
+                </div>
+
+                <div class="row portfolio-cards">
+                    <div class="col-sm-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg');"></div>
+                            <div class="portfolio-card-information">
+                                <span class="portfolio-card-title">Visitor Analytics Dashboard</span>
+                                <span class="portfolio-card-company">Kepler Analytics, Australia</span>
+                                <span class="portfolio-card-credits">Visualisation and analysis of Retail Store Visitors</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg');"></div>
+                            <div class="portfolio-card-information">
+                                <div class="portfolio-card-title">B2B Asset Sharing Platform</div>
+                                <div class="portfolio-card-company">Oneberry Technologies, Singapore</div>                               
+                                <div class="portfolio-card-credits">Online PLatform where businesses list and rent</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg');"></div>
+                            <div class="portfolio-card-information">
+                                <div class="portfolio-card-title">Another design project</div>
+                                <div class="portfolio-card-company">Oneberry Technologies, Singapore</div>
+                                <div class="portfolio-card-credits">Hello World, Welcome to Wonderland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            
+        <section class="content-section dark-content content-section-side-image">
+            <!-- on a mobile device it will display block, the image will show on Extra small devices (Mobile) -->
+            <!-- anything above Extra small device - it will display None - which will make it disappear -->
+             <div class="content-section-side-image-container d-block d-sm-none" style="background-image: url('img/who-am-i-mobile.jpg');"></div>
+             
+             <div class="content-section-side-image-content">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-9 offset-sm-1">
+                             <h2 class="content-section-side-image-heading">
+                                 <!-- Using bootstrap css to make the profile image circle and also mb-4 is to put margin around the image. -->
+                                 <img class="img-circle mb-4" src="img/profile-picture.jpg" alt="Diana" width="60" height="60">
+                                 <br>
+                                 안녕하세요  
+                             </h2>
+                             <p>I love experimenting - more specifically - anything digital and creative. I like to think of myself as a creative individual because I can't stop learning something new and trying something different. Be it joining a rock band, photography, filming, marketing, software developing or creating cool user interfaces, I would always fall in love for anything that could not only expand my skill set but also have fun doing it.</p>
+                             <p>Coming from a software development background, I understand what is critical for a project to reach its launch date - from back-end/front-end programming, QA, Agile to Project Management. In my past position of a Product Designer which also involves front-end coding, I have found passion in designing User Interfaces that are not only beautiful in the eyes but also practical to achieve the goals of the project.</p>
+                             <p>To see my full range of skills, <a href="#">click here.</a></p>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+
+             <!-- Side image will not appear for Extra small devices - d-block- but it will show block for small devices and above hence d-sm-block -->
+             <div class="content-section-side-image-container d-none d-sm-block" style="background-image: url('img/who-am-i-desktop.jpg');"></div>
+
+        </section>
+
+        <section class="content-section content-section-centered">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Send me a Message</h2>
+                        <p>Say hello or ask me <em>anything</em>. I am always happy to help.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="offset-sm-3 col-sm-6">
+                        <form class="contact-form">
+                            <input class="contact-form-input" type="text" name="name" placeholder="Name" value="" required>
+                            <input class="contact-form-input" type="email" name="email" placeholder="Email Address" value="" required>
+                            <input class="contact-form-input" type="text" name="phone_number" placeholder="Phone Number" value="" required>
+                            <textarea class="contact-form-input" name="query" placeholder="Your Query"></textarea>
+                            <div class="contact-form-actions">
+                                <input class="contact-form-checkbox-input" id="consent" type="checkbox" name="consent" value="1" required>
+                                <label for="consent" class="contact-form-checkbox-label">I agree to receive direct response to my enquirely via the contact details that I have provided above.</label>
+                                <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+                            </div>
+                            
+                        </form>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">&copy; Diana Eddie, 2020</footer>
+        
+    </body>
+</html>

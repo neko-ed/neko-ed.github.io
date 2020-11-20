@@ -1,0 +1,15 @@
+.content-section {
+  padding: 100px 0;
+}
+.content-section.content-section-centered {
+  text-align: none;
+}
+.content-section.dark-content {
+  background: #303b48;
+}
+.content-section.content-section-sde-image .content-section-side-image-container {
+  width: 250px;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
