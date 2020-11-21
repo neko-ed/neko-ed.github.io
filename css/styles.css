@@ -163,3 +163,34 @@ a:hover, a:active, a:focus {
   letter-spacing: 1px;
   font-weight: 600;
 }
+
+.contact-form {
+  margin-top: 30px;
+}
+.contact-form .contact-form-input {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 18px 22px;
+  font-size: 18px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-form .contact-form-input::placeholder {
+  color: #9E9E9E;
+}
+.contact-form textarea.contact-form-input {
+  min-height: 120px;
+}
+
+.footer {
+  background: #EEF1F2;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 10px 0;
+}
