@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   font-family: "Open Sans", sans-serif;
   color: #423d3f;
@@ -85,6 +86,10 @@ a:hover, a:active, a:focus {
 
 .img-circle {
   border-radius: 50%;
+}
+
+.bg-primary {
+  background: linear-gradient(93.04deg, #d4d104 -21.04%, #f21b18 147.44%);
 }
 
 .content-section {
@@ -181,7 +186,47 @@ a:hover, a:active, a:focus {
   color: #9E9E9E;
 }
 .contact-form textarea.contact-form-input {
-  min-height: 120px;
+  min-height: 160px;
+}
+.contact-form .contact-form-checkbox-input {
+  display: none;
+}
+.contact-form .contact-form-checkbox-input:checked + .contact-form-checkbox-label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.contact-form .contact-form-checkbox-label {
+  position: relative;
+  color: #ADABAB;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.contact-form .contact-form-checkbox-label:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -2px;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-form .contact-form-checkbox-label:after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  color: #EA2626;
+  left: 11px;
+  top: 9px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.3s;
 }
 
 .footer {
@@ -193,4 +238,17 @@ a:hover, a:active, a:focus {
   letter-spacing: 1px;
   text-align: center;
   padding: 10px 0;
+}
+
+.skillsets .skillset {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.skillsets .skillset .skillset-heading {
+  text-transform: uppercase;
+  color: #797979;
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
