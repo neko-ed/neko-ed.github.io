@@ -1,26 +1,25 @@
 @charset "UTF-8";
 html, body {
-  font-family: "Open Sans", sans-serif;
-  color: #423d3f;
+  font-family: transat-text, sans-serif;
+  color: #707070;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #f5bf38;
+  color: #3cbbb1;
 }
 
 h1 {
   font-size: 74px;
-  font-weight: 700;
-  letter-spacing: -3px;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -1.5px;
+  font-weight: 700;
 }
 
 p {
+  font-size: 20px;
   line-height: 1.6;
   margin: 20px 0;
 }
@@ -34,35 +33,39 @@ a:hover, a:active, a:focus {
 }
 
 .hero-unit {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero3-unit-background-desktop.jpg");
+  text-align: center;
+  letter-spacing: 2.4px;
+  background: url("../img/hero9-unit-background-desktop.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   min-height: 100vh;
   padding: 50px 0;
 }
-.hero-unit .hero-unit-subheading {
-  color: #f5bf38;
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 2.4px;
-  margin-top: 60px;
-  margin-bottom: 45px;
+.hero-unit .hero-unit-heading {
+  min-height: 500px;
+  background-image: url("../img/hero-heading.svg");
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.hero-unit .hero-unit-arrow {
+  min-height: 200px;
+  width: auto;
+  background-image: url("../img/arrow-down.gif");
+  background-size: 200px;
 }
 
 @media only screen and (max-width: 576px) {
   .hero-unit {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero4-unit-background-desktop.jpg");
-    background-size: cover;
-    background-position: center;
+    letter-spacing: 2.4px;
+    background: url(".img/hero9-unit-background-desktop.png");
+    background-color: #141414;
     min-height: 100vh;
-  }
-  .hero-unit .hero-unit-heading {
-    font-size: 50px;
-  }
-  .hero-unit .hero-unit-subheading {
-    font-size: 14px;
   }
 }
 .btn {
@@ -74,14 +77,7 @@ a:hover, a:active, a:focus {
   padding: 15px 23px;
 }
 .btn.btn-primary {
-  background: linear-gradient(93.04deg, #d4d104 -21.04%, #f21b18 147.44%);
-}
-
-.dark-content {
-  color: #fff;
-}
-.dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content h5, .dark-content h6, .dark-content p {
-  color: #fff;
+  background: linear-gradient(93.04deg, #3cbbb1 -1%, #d9e021 100%);
 }
 
 .img-circle {
@@ -89,32 +85,61 @@ a:hover, a:active, a:focus {
 }
 
 .bg-primary {
-  background: linear-gradient(93.04deg, #d4d104 -21.04%, #f21b18 147.44%);
+  background: linear-gradient(93.04deg, #3cbbb1 -1%, #d9e021 100%);
+}
+
+.modal-dialog {
+  max-width: 1200px;
+}
+
+.project-modal-links {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400;
+}
+.project-modal-links:hover, .project-modal-links:active, .project-modal-links:focus {
+  color: #3cbbb1;
+}
+
+.content-section-no-padding {
+  background: #fafaf9;
 }
 
 .content-section {
   padding: 100px 0;
+  background: #fafaf9;
 }
 .content-section.content-section-centered {
   text-align: center;
 }
-.content-section.dark-content {
-  background: #303b48;
+.content-section .content-section-no-padding {
+  padding: -100px;
 }
-.content-section.content-section-side-image {
+.content-section .image-section {
+  background-image: url("../img/team-members.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.content-section .content-section-side-image {
   display: flex;
   flex-direction: row;
   padding: 0;
 }
-.content-section.content-section-side-image .content-section-side-image-content {
+.content-section .content-section-side-image .content-section-side-image-content {
   flex-grow: 1;
   padding: 50px 0;
 }
-.content-section.content-section-side-image .content-section-side-image-container {
+.content-section .content-section-side-image .content-section-side-image-container {
   width: 250px;
-  min-height: 500px;
+  min-height: 50px;
   background-size: cover;
   background-position: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 576px) {
@@ -122,48 +147,56 @@ a:hover, a:active, a:focus {
     flex-direction: column;
   }
   .content-section.content-section-side-image .content-section-side-image-container {
-    min-height: 80px;
-    width: 100%;
+    padding: 0;
+  }
+  .content-section .image-section {
+    height: 200px;
   }
   .content-section .content-section-side-image-heading {
     text-align: center;
   }
 }
+.portfolio-featured {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 5px;
+}
+
 .portfolio-cards {
   margin-top: 60px;
 }
 .portfolio-cards .portfolio-card {
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 4px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border-color: #dfdfdf;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .portfolio-cards .portfolio-card .portfolio-card-image {
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 300px;
 }
 .portfolio-cards .portfolio-card .portfolio-card-information {
   padding: 25px 20px;
+  color: white;
 }
 .portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-title {
   display: block;
   font-size: 20px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
   margin-bottom: 3px;
-  font-weight: 600;
 }
 .portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-company {
   display: block;
   font-size: 14px;
-  letter-spacing: -1px;
   margin-bottom: 25px;
 }
 .portfolio-cards .portfolio-card .portfolio-card-information .portfolio-card-credits {
   display: block;
   font-size: 14px;
-  color: #a7a7a7;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -230,8 +263,8 @@ a:hover, a:active, a:focus {
 }
 
 .footer {
-  background: #EEF1F2;
-  color: rgba(0, 0, 0, 0.25);
+  background: #dfdfdf;
+  color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -251,4 +284,250 @@ a:hover, a:active, a:focus {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.portfolio-modals .project-summary {
+  color: #707070;
+  font-size: 16px;
+  padding-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-title {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+  margin-top: 50px;
+}
+.portfolio-modals .project-summary .company-name {
+  display: block;
+  text-align: center;
+  color: #3cbbb1;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+.portfolio-modals .project-summary .project-description {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-featured-image {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-bottom: 50px;
+}
+.portfolio-modals .project-summary .project-contributions {
+  margin-bottom: 70px;
+}
+.portfolio-modals .project-summary .project-contributions .project-contributions-part {
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-contributions .project-contributions-part .project-contributions-icon {
+  margin-right: 10px;
+}
+.portfolio-modals .project-summary .project-contributions .project-contributions-part .project-contributions-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+.portfolio-modals .project-summary .project-company {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-company .project-company-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-company .project-company-name {
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-company .project-company-image {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.portfolio-modals .project-summary .project-design-process {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-design-process .project-design-process-title {
+  text-align: center;
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-design-process .project-design-process-image {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.portfolio-modals .project-summary .project-challenge {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-challenge .project-challenge-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-challenge .project-challenge-text {
+  text-align: center;
+  font-size: 20px;
+}
+.portfolio-modals .project-summary .project-user-research {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-user-research .project-user-research-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.portfolio-modals .project-summary .project-user-research .project-user-research-text {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.portfolio-modals .project-summary .project-user-research .project-user-research-image {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+.portfolio-modals .project-summary .project-key-findings {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-key-findings .project-key-findings-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-key-findings .project-key-findings-insight-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+.portfolio-modals .project-summary .project-key-findings .project-key-findings-insight-text {
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-prototyping {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.portfolio-modals .project-summary .project-prototyping .project-prototyping-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-prototyping .project-prototyping-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+.portfolio-modals .project-summary .project-prototyping .project-prototyping-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.portfolio-modals .project-summary .project-challenges {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-challenges .project-challenges-title {
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-challenges .project-challenges-image {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.portfolio-modals .project-summary .project-challenges .project-challenges-text {
+  margin-top: 10px;
+}
+.portfolio-modals .project-summary .project-final {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-final .project-final-title {
+  text-align: center;
+  color: #3cbbb1;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .project-final .project-final-image {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.portfolio-modals .project-summary .project-key-takeaways {
+  margin-bottom: 100px;
+}
+.portfolio-modals .project-summary .project-key-takeaways .project-key-takeaways-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.portfolio-modals .project-summary .thank-you {
+  text-align: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio-modals .project-summary .project-title {
+    font-size: 18px;
+  }
+  .portfolio-modals .project-summary .company-name {
+    font-size: 10px;
+  }
+  .portfolio-modals .project-summary .project-description {
+    margin-bottom: 50px;
+  }
+  .portfolio-modals .project-summary .project-featured-image {
+    height: 200px;
+  }
+  .portfolio-modals .project-summary .project-contributions {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }

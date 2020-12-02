@@ -1,0 +1,294 @@
+.portfolio-modals{
+
+    .project-summary{
+        color: #707070;
+        font-size: 16px;
+        padding-bottom: 100px;
+
+        .project-title{
+            display: block; 
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+            margin-top: 50px;
+        }
+
+        .company-name{
+            display: block; 
+            text-align: center;
+            color: #3cbbb1;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            font-size: 12px;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+
+        }
+
+        .project-description{
+            display: block;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .project-featured-image{
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            margin-bottom: 50px;
+        }
+
+        .project-contributions{
+            margin-bottom: 70px;
+            
+            .project-contributions-part{
+                margin-bottom: 30px;
+                .project-contributions-icon{
+                    margin-right: 10px;
+                }
+    
+                .project-contributions-title{
+                    color: #3cbbb1;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 1.2px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .project-company{
+            margin-top: 70px;
+            margin-bottom: 100px;
+            .project-company-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            .project-company-name{
+                margin-bottom: 30px;
+            }
+            .project-company-details{
+
+            }
+            .project-company-image{
+                min-height: 300px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto;
+
+            }
+        }
+
+        .project-design-process{
+            margin-bottom: 100px;
+            .project-design-process-title{
+                text-align: center;
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            .project-design-process-image{
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .project-challenge{
+            text-align: center;
+            margin-bottom: 100px;
+            .project-challenge-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            .project-challenge-text{
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+
+        .project-user-research{
+            margin-bottom: 100px;
+            .project-user-research-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            .project-user-research-text{
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+            .project-user-research-image{
+                background-size: cover;
+                background-position: center;
+                height: 200px;
+            }
+        }
+
+        .project-key-findings{
+            margin-bottom: 100px;
+            .project-key-findings-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .project-key-findings-insight-title{
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+            }
+
+            .project-key-findings-insight-text{
+                margin-bottom: 30px;
+            }
+        }
+
+        .project-prototyping{
+            margin-bottom: 120px;
+            text-align: center;
+            .project-prototyping-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .project-prototyping-text{
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+            }
+
+            .project-prototyping-image{
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+            }
+        }
+
+        .project-challenges{
+            margin-bottom: 100px;
+            .project-challenges-title{
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .project-challenges-image{
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+            }
+
+            .project-challenges-text{
+                margin-top: 10px;
+            }
+        }
+
+        .project-final{
+            margin-bottom: 100px;
+            .project-final-title{
+                text-align: center;
+                color: #3cbbb1;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            .project-final-image{
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+            }
+        }
+
+        .project-key-takeaways{
+            margin-bottom: 100px;
+            .project-key-takeaways-title{
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+        }
+
+        .thank-you{
+            text-align: center;
+            margin-bottom: 100px;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+
+        
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+
+    .portfolio-modals{
+        .project-summary{
+
+            .project-title{
+                font-size: 18px;
+            }
+
+            .company-name{
+                font-size: 10px;
+            }
+
+            .project-description{
+                margin-bottom: 50px;
+            }
+
+            .project-featured-image{
+                height: 200px;
+            }
+
+            .project-contributions{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,25 +1,26 @@
 html, body{
-    font-family: 'Open Sans', sans-serif;
-    color: #423d3f;
+    font-family: transat-text, sans-serif;
+    color: #707070;
 }
 
 h1, h2, h3, h4, h5, h6{
-    color: #f5bf38;
+    color: #3cbbb1;
 }
 
 h1 {
     font-size: 74px;
-    font-weight: 700;
-    letter-spacing: -3px;
+    font-weight: 400;
+    //letter-spacing: -3px;
 }
 
 h2{
     font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -1.5px;
+    font-weight: 700;
+    //letter-spacing: -1.5px;
 }
 
 p{
+    font-size: 20px;
     line-height: 1.6;
     margin: 20px 0;
 }

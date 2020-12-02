@@ -1,15 +1,22 @@
-.dark-content{
-    color: #fff;
-
-    h1, h2, h3, h4, h5, h6, p {
-        color: #fff;
-    }
-}
-
 .img-circle{
     border-radius: 50%;
 }
 
 .bg-primary{
-    background: linear-gradient(93.04deg, #d4d104 -21.04%, #f21b18 147.44%);
+    background: linear-gradient(93.04deg, #3cbbb1 -1%, #d9e021 100%);
+}
+
+.modal-dialog {
+    max-width: 1200px;
+    
+}
+
+.project-modal-links{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    &:hover, &:active, &:focus{
+        color: #3cbbb1;
+        //font-weight: 500;
+    }
 }

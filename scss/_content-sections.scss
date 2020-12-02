@@ -1,15 +1,30 @@
+.content-section-no-padding{
+    background: #fafaf9;
+}
+
 .content-section{
     padding: 100px 0;
+    background: #fafaf9;
 
     &.content-section-centered{
         text-align: center;
     }
 
-    &.dark-content{
-        background: #303b48;
+
+    .content-section-no-padding{
+        padding: -100px;
+    }
+
+    .image-section{
+        background-image: url('../img/team-members.jpg');
+        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 700px;
     }
     
-    &.content-section-side-image{
+    .content-section-side-image{
         display: flex;
         flex-direction: row;
         padding: 0;
@@ -19,21 +34,28 @@
         }
         .content-section-side-image-container{
             width: 250px;
-            min-height: 500px;
+            min-height: 50px;
             background-size: cover;
             background-position: center;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }
 
 @media only screen and (max-width: 576px){
     .content-section{
+        //padding: 50px 20px;
         &.content-section-side-image{
             flex-direction: column;
             .content-section-side-image-container{
-                min-height: 80px;
-                width: 100%;
+                padding: 0;
             }
+        }
+        
+        .image-section{
+            height: 200px;
         }
 
         .content-section-side-image-heading{
