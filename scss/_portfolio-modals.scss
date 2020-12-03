@@ -72,9 +72,7 @@
             .project-company-name{
                 margin-bottom: 30px;
             }
-            .project-company-details{
-
-            }
+            
             .project-company-image{
                 min-height: 300px;
                 background-repeat: no-repeat;
@@ -96,10 +94,14 @@
                 margin-bottom: 30px;
             }
 
+            
+
             .project-design-process-image{
-                background-size: cover;
-                background-position: center;
-                height: 500px;
+                display: block;
+                max-width:230px;
+                max-height:95px;
+                width: auto;
+                height: auto;
             }
         }
 

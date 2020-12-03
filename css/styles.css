@@ -201,6 +201,9 @@ a:hover, a:active, a:focus {
   letter-spacing: 1px;
   font-weight: 600;
 }
+.portfolio-cards .portfolio-card:hover {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05), 0px 3px 20px rgba(0, 0, 0, 0.35);
+}
 
 .contact-form {
   margin-top: 30px;
@@ -370,9 +373,11 @@ a:hover, a:active, a:focus {
   margin-bottom: 30px;
 }
 .portfolio-modals .project-summary .project-design-process .project-design-process-image {
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
 }
 .portfolio-modals .project-summary .project-challenge {
   text-align: center;
