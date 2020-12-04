@@ -535,4 +535,10 @@ a:hover, a:active, a:focus {
     text-align: center;
     margin-bottom: 20px;
   }
+  .portfolio-modals .project-prototyping .project-prototyping-image {
+    max-height: 190px;
+  }
+  .portfolio-modals .project-final .project-final-image {
+    max-height: 190px;
+  }
 }
