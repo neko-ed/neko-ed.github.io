@@ -1,7 +1,7 @@
 .hero-unit{
     text-align: center;
     letter-spacing: 2.4px;
-    background: url('../img/hero9-unit-background-desktop.png');
+    background-color: #141414;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,8 +11,8 @@
     padding: 50px 0;
 
     .hero-unit-heading{
-        min-height: 500px;
-        background-image:url('../img/hero-heading.svg');
+        min-height: 700px;
+        background-image:url('../img/hero-heading.png');
         margin:0;
         padding:0;
         background-repeat: no-repeat;
@@ -33,9 +33,19 @@
     .hero-unit{
         text-align: center;
         letter-spacing: 2.4px;
-        background: url('.img/hero9-unit-background-desktop.png');
-        background-color: #141414;
         min-height: 100vh;
 
+        .hero-unit-heading{
+            min-height: 300px;
+            background-size: contain;
+            background-image:url('../img/hero-heading.png');
+            margin:0;
+            padding:0;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
     }
+
+    
 }
